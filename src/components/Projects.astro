@@ -1,6 +1,9 @@
 ---
 import NextJS from "./icons/NextJS.astro";
 import Tailwind from "./icons/Tailwind.astro";
+import SocialPill from "./SocialPill.astro";
+import GitHubIcon from "./icons/GitHub.astro";
+import Code from "./icons/Code.astro";
 
 const TAGS = {
   NEXT: {
@@ -27,16 +30,28 @@ const PROJECTS = [
 ---
 
 {
-  PROJECTS.map(({ image, title, description }) => (
+  PROJECTS.map(({ image, title, description, link, github }) => (
     <article>
       <h3 class="text-2xl font-semibold text-yellow-200 mb-2">{title}</h3>
       <p class="text-lg mb-4 text-pretty">{description}</p>
-      <img
-        loading="lazy"
-        class="rounded shadow-2xl shadow-white/10 aspect-video"
-        src={image}
-        alt={`Captura de pantalla del proyecto ${image}`}
-      />
+      <a href={link} target="_blank">
+        <img
+          loading="lazy"
+          class="rounded shadow-2xl shadow-white/10 aspect-video"
+          src={image}
+          alt={`Captura de pantalla del proyecto ${image}`}
+        />
+      </a>
+      <nav class="flex gap-4 mt-8 flex-wrap">
+        <SocialPill href={link}>
+          <Code class="size-4 md:size-6" />
+          Preview
+        </SocialPill>
+        <SocialPill href={github}>
+          <GitHubIcon class="size-4 md:size-6" />
+          GitHub
+        </SocialPill>
+      </nav>
     </article>
   ))
 }
