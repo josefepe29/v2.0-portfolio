@@ -1,33 +1,33 @@
 ---
-import Layout from "../layouts/Layout.astro"
-import Badge from "../components/Badge.astro"
-import SectionContainer from "../components/SectionContainer.astro"
-import LinkedInIcon from "../components/icons/LinkedIn.astro"
-import SocialPill from "../components/SocialPill.astro"
-import GitHubIcon from "../components/icons/GitHub.astro"
-import MailIcon from "../components/icons/Mail.astro"
-import Experience from "../components/Experience.astro"
-import Briefcase from "../components/icons/Briefcase.astro"
-import CodeIcon from "../components/icons/Code.astro"
-import Projects from "../components/Projects.astro"
+import Layout from "../layouts/Layout.astro";
+import Badge from "../components/Badge.astro";
+import SectionContainer from "../components/SectionContainer.astro";
+import LinkedInIcon from "../components/icons/LinkedIn.astro";
+import SocialPill from "../components/SocialPill.astro";
+import GitHubIcon from "../components/icons/GitHub.astro";
+import MailIcon from "../components/icons/Mail.astro";
+import Experience from "../components/Experience.astro";
+import Briefcase from "../components/icons/Briefcase.astro";
+import CodeIcon from "../components/icons/Code.astro";
+import Projects from "../components/Projects.astro";
 ---
 
 <Layout
-  title="Porfolio de midudev - Desarrollador y Programador Web con 15 años de experiencia"
-  description="Contrata a midudev para crear tu aplicación web o móvil. Desarrollador Web y Creador de Contenido. Especializado en crear aplicaciones únicas."
+  title="Porfolio de Jose Perez - Desarrollador y Programador Web"
+  description="Contratame para crear tu aplicación web o móvil. Desarrollador Web"
 >
   <main class="px-4">
-    <SectionContainer class="py-44 pb-32">
+    <SectionContainer class="py-44 pb-32" id="sobre-mi">
       <img
-        class="rounded-full size-12 mb-4"
-        src="/midudev.webp"
-        alt="midudev photo"
+        class="rounded-full size-20 mb-4"
+        src="/Jose.jpg"
+        alt="Jose Perez photo"
       />
       <h1
         class="text-white text-3xl md:text-4xl lg:text-5xl font-bold flex flex-row gap-x-4 pb-6 lg:pb-10"
       >
-        Hey, soy midudev <a
-          href="https://linkedin.com/in/midudev"
+        Hola, Soy Jose Perez <a
+          href="https://linkedin.com/in/joseferneyperezcamacho-fullstackdeveloper"
           target="_blank"
           rel="noopener"
           class="flex justify-center items-center"
@@ -36,27 +36,32 @@ import Projects from "../components/Projects.astro"
         </a>
       </h1>
       <h2 class="text-xl lg:text-2xl text-balance max-w-[700px]">
-        <span>+15 años de experiencia.</span><span class="text-yellow-200">
-          Desarrollador Web y Creador de Contenido</span
-        >
-         .<span class="text-red-200"> De Barcelona, España</span>.
-        <span class="text-sky-200"
-          >Especializado en crear aplicaciones únicas.</span
+        <span
+          >FullStack Developer con conocimiento para la creación y el desarrollo
+          de sitios y aplicaciones web modernas a través de HTML, CSS,
+          JavaScript, TypeScript y React en la parte del frontend y desde la
+          parte del backend usando herramientas como Java, Python, Node.js,
+          Express, MongoDB y SQL. Mi enfoque se centra en crear, bajo un
+          constante trabajo en equipo, soluciones robustas y escalables desde
+          las cuales se generan excelentes resultados al usuario manteniendo el
+          compromiso con la entrega de proyectos de alta calidad.</span
         >
       </h2>
 
       <nav class="flex gap-4 mt-8 flex-wrap">
-        <SocialPill href="https://linkedin.com/in/midudev">
+        <SocialPill
+          href="https://linkedin.com/in/joseferneyperezcamacho-fullstackdeveloper"
+        >
           <LinkedInIcon class="size-4 md:size-6" />
-           LinkedIn
+          LinkedIn
         </SocialPill>
-        <SocialPill href="https://github.com/midudev">
+        <SocialPill href="https://github.com/josefepe29">
           <GitHubIcon class="size-4 md:size-6" />
-           GitHub
+          GitHub
         </SocialPill>
-        <SocialPill href="mailto:miduga@gmail.com">
+        <SocialPill href="mailto:josefepe29@gmail.com">
           <MailIcon class="size-4 md:size-6" />
-           miduga@gmail.com
+          josefepe29@gmail.com
         </SocialPill>
       </nav>
     </SectionContainer>
@@ -64,7 +69,7 @@ import Projects from "../components/Projects.astro"
     <SectionContainer id="experiencia">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <Briefcase class="size-7" />
-         Experiencia laboral
+        Experiencia laboral
       </h2>
       <Experience />
     </SectionContainer>
@@ -72,7 +77,7 @@ import Projects from "../components/Projects.astro"
     <SectionContainer id="proyectos">
       <h2 class="text-3xl font-semibold mb-6 flex gap-x-3 items-center">
         <CodeIcon class="size-7" />
-         Proyectos
+        Proyectos
       </h2>
       <Projects />
     </SectionContainer>
